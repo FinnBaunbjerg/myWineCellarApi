@@ -35,5 +35,12 @@ namespace WineCellar.Api.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet]
+        [Route("{id}")]
+        public string Get(int id)
+        {
+            return Summaries[id];
+        }
     }
 }
